@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace _28._09._2026
+{
+    public class uczen:osoba
+    {
+        private int nuUcznia = 0;
+        public static int liczbaUczniow;
+        //static - pole klasy, a nie obiektu, wspólne dla wszystkich obiektów klasy uczen
+
+        public uczen(int nuUcznia)
+        {
+            this.nuUcznia = nuUcznia;
+            liczbaUczniow++;
+
+        }
+        public uczen()
+        {
+            liczbaUczniow++;
+            nuUcznia = liczbaUczniow;
+        }
+        public uczen(string imie,int wiek)
+            :base(imie, wiek)
+        //base - odwołanie do konstruktora klasy bazowej (osoba)
+        {
+            liczbaUczniow++;
+            nuUcznia = liczbaUczniow;
+        }
+        public override string ToString()
+        {
+            return base.ToString() + " numer ucznia: " + nuUcznia;
+        }
+
+    }
+}

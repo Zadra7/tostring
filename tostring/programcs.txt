@@ -1,0 +1,21 @@
+using _28._09._2026;
+
+osoba osoba = new osoba(); //tworzymy nowy obiekt klasy osoba, wywołując konstruktor bezparametrowy
+//osoba.imie = "Jan"; //przypisujemy wartość do pola imie obiektu osoba 
+//publiczne więc można zmieniać wartość pola
+//Console.WriteLine(osoba.imie);
+osoba osoba2 = new osoba("Brunch", 30);
+//Console.WriteLine("Imię osoba2");
+//Console.WriteLine(osoba2.imie);
+Console.WriteLine(osoba2);
+
+Console.WriteLine("Liczba uczniów " + uczen.liczbaUczniow);
+uczen uczen1 = new uczen();
+Console.WriteLine(uczen1);
+Console.WriteLine("Liczba uczniów " + uczen.liczbaUczniow);
+uczen uczen2 = new uczen(7);
+Console.WriteLine(uczen2);
+Console.WriteLine("Liczba uczniów " + uczen.liczbaUczniow);
+uczen uczen3 = new uczen("Jaś", 20);
+Console.WriteLine(uczen3);
+Console.WriteLine("Liczba uczniów " + uczen.liczbaUczniow);
